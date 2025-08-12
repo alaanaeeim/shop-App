@@ -1,0 +1,19 @@
+1- Add App Icon [IOS/Android] => Done ✅
+2- Create Splash Screen
+3- Add Fonts
+4- Implement Navigation Bar (Stack Navigation)
+5- Implement Bottom Tab Navigation
+6- Implement Drawer Navigation
+7- Set Up Zustand State Management
+8- Integrate React Query for Data Fetching
+9- Create Home Screen
+10- Create Profile Screen
+11- Create Settings Screen
+12- Forms and Validation - Formik and Yup
+12- Upload Image Feature
+13- Translate App to English, Arabic, and French
+14- Implement Dark Mode
+15- Add Push Notifications
+16- Implement User Authentication (Login/Signup)
+17- Set Up Error Handling and Logging
+18- Optimize Performance (Lazy Loading, Code Splitting)
