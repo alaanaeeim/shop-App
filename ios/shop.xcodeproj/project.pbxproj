@@ -9,9 +9,15 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-shop.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-shop.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		30E4374DB953451D810CD82C /* ComicNeue-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D9822E4370E417E9C3D44FA /* ComicNeue-LightItalic.ttf */; };
+		5B00F0F6C479459985D4032E /* ComicNeue-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EC0A609490CF4AA29E4FAEFB /* ComicNeue-Italic.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B53CC911F3BDA72FB15DA73C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		E2088321165447EEA283C09B /* ComicNeue-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5139CC149264EF79BBA31E4 /* ComicNeue-Light.ttf */; };
+		E94B6DFE859E4328982C884E /* ComicNeue-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CFA8EC2ADE574A4C9688F40E /* ComicNeue-Bold.ttf */; };
+		F1C6CEE08E8D4296BEDCAE36 /* ComicNeue-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D3307BD9FCA04A2C8B5B218E /* ComicNeue-BoldItalic.ttf */; };
+		FE059A2E8E60414B82F29D95 /* ComicNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DCE453D486248C4BC7F1B87 /* ComicNeue-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +29,15 @@
 		5709B34CF0A7D63546082F79 /* Pods-shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shop.release.xcconfig"; path = "Target Support Files/Pods-shop/Pods-shop.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-shop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = shop/AppDelegate.swift; sourceTree = "<group>"; };
+		7D9822E4370E417E9C3D44FA /* ComicNeue-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ComicNeue-LightItalic.ttf"; path = "../src/assets/fonts/ComicNeue-LightItalic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = shop/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8755AE8F2E4C7EB900FBA121 /* shop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "shop-Bridging-Header.h"; sourceTree = "<group>"; };
+		8DCE453D486248C4BC7F1B87 /* ComicNeue-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ComicNeue-Regular.ttf"; path = "../src/assets/fonts/ComicNeue-Regular.ttf"; sourceTree = "<group>"; };
+		CFA8EC2ADE574A4C9688F40E /* ComicNeue-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ComicNeue-Bold.ttf"; path = "../src/assets/fonts/ComicNeue-Bold.ttf"; sourceTree = "<group>"; };
+		D3307BD9FCA04A2C8B5B218E /* ComicNeue-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ComicNeue-BoldItalic.ttf"; path = "../src/assets/fonts/ComicNeue-BoldItalic.ttf"; sourceTree = "<group>"; };
+		EC0A609490CF4AA29E4FAEFB /* ComicNeue-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ComicNeue-Italic.ttf"; path = "../src/assets/fonts/ComicNeue-Italic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F5139CC149264EF79BBA31E4 /* ComicNeue-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ComicNeue-Light.ttf"; path = "../src/assets/fonts/ComicNeue-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				8755AE8F2E4C7EB900FBA121 /* shop-Bridging-Header.h */,
 			);
 			name = shop;
 			sourceTree = "<group>";
@@ -58,6 +72,19 @@
 				5DCACB8F33CDC322A6C60F78 /* libPods-shop.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AE27DF3F1CD4CE1B42759A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CFA8EC2ADE574A4C9688F40E /* ComicNeue-Bold.ttf */,
+				D3307BD9FCA04A2C8B5B218E /* ComicNeue-BoldItalic.ttf */,
+				EC0A609490CF4AA29E4FAEFB /* ComicNeue-Italic.ttf */,
+				F5139CC149264EF79BBA31E4 /* ComicNeue-Light.ttf */,
+				7D9822E4370E417E9C3D44FA /* ComicNeue-LightItalic.ttf */,
+				8DCE453D486248C4BC7F1B87 /* ComicNeue-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -75,6 +102,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				3AE27DF3F1CD4CE1B42759A5 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -161,6 +189,12 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				B53CC911F3BDA72FB15DA73C /* PrivacyInfo.xcprivacy in Resources */,
+				E94B6DFE859E4328982C884E /* ComicNeue-Bold.ttf in Resources */,
+				F1C6CEE08E8D4296BEDCAE36 /* ComicNeue-BoldItalic.ttf in Resources */,
+				5B00F0F6C479459985D4032E /* ComicNeue-Italic.ttf in Resources */,
+				E2088321165447EEA283C09B /* ComicNeue-Light.ttf in Resources */,
+				30E4374DB953451D810CD82C /* ComicNeue-LightItalic.ttf in Resources */,
+				FE059A2E8E60414B82F29D95 /* ComicNeue-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
