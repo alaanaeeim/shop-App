@@ -1,6 +1,6 @@
 1- Add App Icon [IOS/Android] => Done ✅
-2- Create Splash Screen
-3- Add Fonts
+2- Create Splash Screen  => Done ✅
+3- Add Fonts  => Done ✅
 4- Implement Navigation Bar (Stack Navigation)
 5- Implement Bottom Tab Navigation
 6- Implement Drawer Navigation

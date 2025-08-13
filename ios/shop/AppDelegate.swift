@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       launchOptions: launchOptions
     )
 
-    RNSplashScreen.show()
+//    RNSplashScreen.show()
 
     return true
   }
