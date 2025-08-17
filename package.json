@@ -3,8 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "android": "ENVFILE=.env.dev npx react-native run-android --variant=devDebug", 
+    "ios": "ENVFILE=.env.dev npx react-native run-ios --scheme shop-dev --mode Debug",
+    "ios:dev": "ENVFILE=.env.dev npx react-native run-ios --scheme shop-dev --mode Debug",
+    "ios:stg": "ENVFILE=.env.stg npx react-native run-ios --scheme shop-stg --mode Debug", 
+    "ios:prod": "ENVFILE=.env.prod npx react-native run-ios --scheme shop-prod --mode Release", 
+    "android:dev": "ENVFILE=.env.dev npx react-native run-android --variant=devDebug", 
+    "android:stg": "ENVFILE=.env.stg npx react-native run-android --variant=stgDebug", 
+    "android:prod": "ENVFILE=.env.prod npx react-native run-android --variant=prodRelease",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
@@ -13,6 +19,7 @@
     "@react-native/new-app-screen": "0.80.2",
     "react": "19.1.0",
     "react-native": "0.80.2",
+    "react-native-config": "^1.5.6",
     "react-native-splash-screen": "^3.3.0"
   },
   "devDependencies": {

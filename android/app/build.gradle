@@ -1,6 +1,8 @@
 apply plugin: "com.android.application"
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
 /**
  * This is the configuration block to customize your React Native Android app.
@@ -54,6 +56,12 @@ react {
     autolinkLibrariesWithApp()
 }
 
+project.ext.envConfigFiles = [
+    debug: ".env.development",
+    release: ".env.production",
+    staging: ".env.staging"
+]
+
 /**
  * Set this to true to Run Proguard on Release builds to minify the Java bytecode.
  */
@@ -95,14 +103,35 @@ android {
     }
     buildTypes {
         debug {
+            applicationIdSuffix ".debug"
             signingConfig signingConfigs.debug
+            resValue "string", "build_config_package", "com.shop"
         }
         release {
-            // Caution! In production, you need to generate your own keystore file.
-            // see https://reactnative.dev/docs/signed-apk-android.
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
+            shrinkResources enableShrinkResourcesInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            resValue "string", "build_config_package", "com.shop"
+        }
+        staging {
+            initWith debug
+            matchingFallbacks = ['debug']
+            applicationIdSuffix ".staging"
+            resValue "string", "build_config_package", "com.shop"
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        dev {
+            dimension "default"
+        }
+        staging {
+            dimension "default"
+        }
+        prod {
+            dimension "default"
         }
     }
 }
@@ -110,7 +139,6 @@ android {
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
-    implementation "com.facebook.react:react-android"
     implementation "androidx.appcompat:appcompat:1.7.0"
 
     if (hermesEnabled.toBoolean()) {
