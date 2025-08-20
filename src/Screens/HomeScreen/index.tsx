@@ -11,8 +11,6 @@ const Home = ({ navigation }: any) => {
 
             <View style={{ justifyContent: 'center', alignItems: 'center' }}>
                 <Text style={{ fontFamily: 'ComicNeue-Bold', fontSize: 22 }}>Welcome to the React Native App!</Text>
-                <Button title="Get Posts" onPress={getPosts} />
-                <Button title="Paginated Posts" onPress={() => getPaginatedPosts(10)} />
             </View>
         </View>
     )

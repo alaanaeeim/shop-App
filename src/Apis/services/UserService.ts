@@ -15,12 +15,16 @@ export const getPosts = async (): Promise<any[]> => {
 };
 
 
-export const getPaginatedPosts = async (page: number = 1): Promise<any[]> => {
+export const getPaginatedPosts = async ({ pageParam = 1 }) => {
     try {
         const response = await apiGet(ENDPOINTS.posts, {
-            params: { _page: page },
+            params: { _page: pageParam },
         });
-        return response?.data || response;
+        const data = response?.data || response || [];
+        const hasMore = pageParam < 10 || false;
+        const nextPage = hasMore ? pageParam + 1 : undefined;
+
+        return { data, nextPage };
     } catch (error) {
         console.error('Error fetching posts:', error);
         throw error;
