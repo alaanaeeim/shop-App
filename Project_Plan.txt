@@ -17,3 +17,5 @@
 16- Implement User Authentication (Login/Signup)
 17- Set Up Error Handling and Logging
 18- Optimize Performance (Lazy Loading, Code Splitting)
+19- Add Axios Config ==> ✅
+20- Add ReattoTron ==> ✅
